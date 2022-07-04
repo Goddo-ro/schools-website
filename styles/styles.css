@@ -1,0 +1,66 @@
+:root {
+    --background-color: #e5e5e5;
+    --blue: #0468ff;
+    --blue-rgb: 4, 104, 255;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: row;
+    padding: 20px 50px;
+}
+
+.sidenav {
+    width: 30%;
+    min-width: 300px;
+    overflow-x: hidden;
+    margin-right: 100px;
+}
+
+.sidenav-el {
+    display: flex;
+    align-items: center;
+}
+
+.sidenav-el:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.sidenav-el img {
+    float: left;
+    margin-right: 16px;
+}
+
+.sidenav-el p {
+    margin: 0;
+}
+
+.sidenav-title {
+    color: var(--blue);
+}
+
+.sidenav-link {
+    padding: 10px;
+    color: #09121f;
+    background-color: #ffffff;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.active-link {
+    background-color: rgba(var(--blue-rgb), 0.2);
+}
+
+.active-link img {
+    filter: invert(36%) sepia(90%) saturate(4883%) hue-rotate(211deg) brightness(102%) contrast(105%);
+}
+
+.active-link p {
+    color: var(--blue);
+}
