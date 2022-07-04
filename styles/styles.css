@@ -70,8 +70,7 @@ body {
 /* main */
 
 .main {
-    width: 80%;
-    max-width: 1000px;
+    width: 100%;
 }
 
 /* topnav */
@@ -100,7 +99,7 @@ header {
 }
 
 header input[type=text] {
-    width: 62%;
+    width: 80%;
     background: url("../images/main/search.png");
     background-repeat: no-repeat;
     background-position: 24px center;
