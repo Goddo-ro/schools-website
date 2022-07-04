@@ -1,5 +1,5 @@
 :root {
-    --background-color: #e5e5e5;
+    --background-color: #f9f9f9;
     --blue: #0468ff;
     --blue-rgb: 4, 104, 255;
 }
@@ -16,8 +16,10 @@ body {
     padding: 20px 50px;
 }
 
+/* sidenav */
+
 .sidenav {
-    width: 30%;
+    width: 20%;
     min-width: 300px;
     overflow-x: hidden;
     margin-right: 100px;
@@ -62,5 +64,69 @@ body {
 }
 
 .active-link p {
+    color: var(--blue);
+}
+
+/* main */
+
+.main {
+    width: 80%;
+    max-width: 1000px;
+}
+
+/* topnav */
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-el {
+    min-height: calc(100% - 4px);
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.header-el img {
+    margin-right: 9px;
+}
+
+.header-el p {
+    margin: 0;
+    padding: 0;
+}
+
+header input[type=text] {
+    width: 62%;
+    background: url("../images/main/search.png");
+    background-repeat: no-repeat;
+    background-position: 24px center;
+    background-size: 16px;
+    background-color: rgba(222, 222, 222, .5);
+    padding: 12px 20px 12px 48px;
+    border: 0;
+    border-radius: 50px;
+}
+
+header input[type=text]::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.btn {
+    background-color: rgba(var(--blue-rgb), .2);
+    border: 1px solid rgba(255, 255, 255, .0);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.btn:hover {
+    border: 1px solid black;
+}
+
+.enter-btn {
     color: var(--blue);
 }
