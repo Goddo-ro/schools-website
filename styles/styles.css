@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
 :root {
     --background-color: #f9f9f9;
     --blue: #0468ff;
@@ -14,7 +16,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: var(--background-color);
     padding: 20px 50px;
     display: flex;
@@ -163,15 +165,39 @@ header input[type=text]::placeholder {
 .news {
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: 1.1fr .78fr;
+    grid-template-columns: 1.5fr .60fr;
     grid-template-areas:
         "left center1"
         "left center2";
     margin-bottom: 40px;
 }
 
+.swiper {
+    width: 500px;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: left;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 84%;
+    object-fit: cover;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+}
+
+.swiper-slide p {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+}
+
 .news-content {
-    height: 90%;
+    width: 100%;
     background: linear-gradient(45deg, var(--light-blue), var(--blue));
     border-radius: 8px;
 }
@@ -179,12 +205,14 @@ header input[type=text]::placeholder {
 .news-item p {
     font-size: 1.5em;
     margin: 0;
-    margin-top: 4px; 
+    margin-top: 8px;
+    overflow-y: auto;
 }
 
 .news-1 {
+    max-height: 500px;
     grid-area: left;
-    height: 250px;
+    height: 100%;
 }
 
 .news-2 {
@@ -445,40 +473,12 @@ footer {
     font-size: .75rem;
 }
 
-@media (max-width: 1200px) {
-    .news {
-        margin-right: 20px;
-        grid-template-columns: 3fr;
-        grid-template-areas:
-            "left"
-            "center1"
-            "center2"
-    }
-
+@media (max-width: 1300px) {
     .news-item p {
-        font-size: 1.5em;
-    }
-
-    .news-2, .news-3 {
-        height: 140px;
+        font-size: 1.25em;
     }
 
     header {
         margin-right: 20px;
-    }
-}
-
-@media (max-width: 680px) {
-    .news-item {
-        height: 100px;
-    }
-
-    .eye-button,
-    .enter-btn {
-        display: none;
-    }
-
-    header {
-        display: block;
     }
 }
