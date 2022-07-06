@@ -10,6 +10,7 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -19,12 +20,14 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 0;
 }
 
 .all-content-container {
     display: flex;
     flex-direction: row;
     max-width: 1300px;
+    padding: 0;
 }
 
 /* sidenav */
@@ -333,19 +336,29 @@ header input[type=text]::placeholder {
     height: 60px;
 }
 
-/* cooperation */
+/* footer */
 
-.cooperation {
-    display: flex;
-    justify-content: center;
+footer {
+    margin-top: auto;
     position: absolute;
     left: 0;
-    width: 100%;
+    right: 0;
+}
+
+/* cooperation */
+
+.cooperators, .contact-us {
+    max-width: 1300px;
+}
+
+.cooperation, .contact-us {
     background: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .cooperators {
-    text-align: center;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     padding: 10px;
@@ -359,6 +372,61 @@ header input[type=text]::placeholder {
 
 .cooperators img {
     width: 100px;
+}
+
+/* contact us */
+
+.footer-contact-us {
+    margin-top: 40px;
+}
+
+.contact-us-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.contact-us-container div:not(:last-child) {
+    margin-right: 150px;
+}
+
+.social {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social img {
+    width: 35px;
+    height: 35px;
+}
+
+.contacts h2 {
+    color: var(--blue);
+    margin-bottom: 6px;
+}
+
+.contacts p {
+    color: var(--grey);
+    line-height: 22px;
+}
+
+.contact-us-container .btn {
+    font-size: 1.25rem;
+    width: 250px;
+}
+
+.footer-info {
+    background: var(--blue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    color: #ffffff;
+    font-size: .75rem;
 }
 
 @media (max-width: 1200px) {
