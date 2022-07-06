@@ -286,7 +286,7 @@ header input[type=text]::placeholder {
 /* Add services */
 
 .add-services {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .services-container {
@@ -320,7 +320,7 @@ header input[type=text]::placeholder {
     color: var(--grey);
 }
 
-.food-info button {
+.blue-btn {
     height: fit-content;
     background: var(--blue);
     color: #ffffff;
@@ -336,20 +336,19 @@ header input[type=text]::placeholder {
 /* cooperation */
 
 .cooperation {
-    background: #ffffff;
+    display: flex;
+    justify-content: center;
     position: absolute;
     left: 0;
-    right: 0;
-    display: flex;
-    justify-content: right;
+    width: 100%;
+    background: #ffffff;
 }
 
 .cooperators {
-    max-width: 1300px;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    padding: 10px; 
+    padding: 10px;
 }
 
 .cooperators div {
