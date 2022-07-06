@@ -68,6 +68,12 @@ body {
     background-color: #ffffff;
     border-radius: 4px;
     text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.sidenav-link:hover,
+.sidenav-link:focus {
+    border: 1px solid black;
 }
 
 .active-link {
@@ -136,6 +142,7 @@ header input[type=text]::placeholder {
     border: 1px solid rgba(255, 255, 255, .0);
     border-radius: 4px;
     padding: 8px;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -250,12 +257,21 @@ header input[type=text]::placeholder {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     text-align: center;
+    column-gap: 20px;
+    row-gap: 40px;
     margin-bottom: 60px;
+}
+
+.info-item {
+    text-decoration: none;
+    color: var(--dark-blue);
+    padding: 4px;
 }
 
 .info-item img {
     width: 80px;
     height: 80px;
+    margin-bottom: 8px;
 }
 
 /* school results */
