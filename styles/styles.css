@@ -285,6 +285,10 @@ header input[type=text]::placeholder {
 
 /* Add services */
 
+.add-services {
+    margin-bottom: 30px;
+}
+
 .services-container {
     display: flex;
     justify-content: space-between;
@@ -327,6 +331,35 @@ header input[type=text]::placeholder {
 
 .enroll-child img {
     height: 60px;
+}
+
+/* cooperation */
+
+.cooperation {
+    background: #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: right;
+}
+
+.cooperators {
+    max-width: 1300px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 10px; 
+}
+
+.cooperators div {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.cooperators img {
+    width: 100px;
 }
 
 @media (max-width: 1200px) {
