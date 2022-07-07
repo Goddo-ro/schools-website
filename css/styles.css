@@ -32,6 +32,10 @@ body {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* sidenav */
 
 .sidenav {
@@ -147,6 +151,7 @@ header input[type=text]::placeholder {
     border-radius: 4px;
     padding: 8px;
     cursor: pointer;
+    text-align: center;
 }
 
 .btn:hover {
