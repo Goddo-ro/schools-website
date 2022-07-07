@@ -279,7 +279,7 @@ header input[type=text]::placeholder {
 
 .image-container img {
     width: 100%;
-    height: 100%;
+    height: 250px;
     object-fit: fill;
 }
 
@@ -431,11 +431,13 @@ footer {
 
 .contact-us-container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1.5fr;
-    display: flex;
+    grid-template-columns: .75fr 2fr .75fr;
+    grid-template-areas: "social contacts btn";
     justify-content: center;
     align-items: center;
     margin-bottom: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .contact-us-container div:not(:last-child) {
@@ -443,6 +445,7 @@ footer {
 }
 
 .social {
+    grid-area: social;
     width: 150px;
     display: flex;
     justify-content: space-between;
@@ -451,6 +454,10 @@ footer {
 .social img {
     width: 35px;
     height: 35px;
+}
+
+.contacts {
+    grid-area: contacts;
 }
 
 .contacts h2 {
@@ -464,8 +471,9 @@ footer {
 }
 
 .contact-us-container .btn {
-    font-size: 1.25rem;
-    width: 250px;
+    grid-area: btn;
+    font-size: 1.25em;
+    width: 100%;
 }
 
 .footer-info {
@@ -475,7 +483,9 @@ footer {
     align-items: center;
     height: 50px;
     color: #ffffff;
-    font-size: .75rem;
+    font-size: .75em;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 @media (max-width: 1300px) {
@@ -485,5 +495,86 @@ footer {
 
     header {
         margin-right: 20px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .sidenav {
+        display: none;
+    }
+
+    .news {
+        grid-gap: 15px;
+        grid-template-columns: 3fr 1.25fr;
+    }
+
+    .content-container p {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .cooperators img {
+        width: 80px;
+    }
+
+    .contact-us-container div:not(:last-child) {
+        margin-right: 80px;
+    }
+}
+
+@media (max-width: 950px) {
+    .social {
+        width: auto;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 830px) {
+    .eye-button, .enter-btn {
+        display: none;
+    }
+
+    .news {
+        grid-template-columns: repeat(2,  1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "left left"
+            "left left"
+            "center1 center2";
+    }
+
+    .cooperators img {
+        width: 60px;
+    }
+
+    .contact-us-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            "contacts social"
+            "contacts btn"
+    }
+
+    .social {
+        flex-direction: row;
+    }
+
+    .contacts h2 {
+        font-size: 1em;
+    }
+    .contacts p {
+        font-size: .75em;
+    }
+
+    .contact-us-container button {
+        width: 100%;
+    } 
+}
+
+@media (max-width: 690px) {
+    .footer-info {
+        flex-direction: column;
     }
 }
