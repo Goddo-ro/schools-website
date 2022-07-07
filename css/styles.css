@@ -35,7 +35,7 @@ body {
 /* sidenav */
 
 .sidenav {
-    width: 20%;
+    width: 16%;
     min-width: 300px;
     overflow-x: hidden;
     margin-right: 80px;
@@ -96,7 +96,7 @@ body {
 
 .main {
     width: 100%;
-    margin-left: 450px;
+    margin-left: 440px;
 }
 
 /* topnav */
@@ -168,7 +168,7 @@ header input[type=text]::placeholder {
 .news {
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: 1.5fr .60fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-areas:
         "left center1"
         "left center2";
@@ -176,7 +176,7 @@ header input[type=text]::placeholder {
 }
 
 .swiper {
-    width: 500px;
+    width: 600px;
     height: 100%;
 }
 
@@ -411,7 +411,7 @@ footer {
 }
 
 .cooperators {
-    padding-left: 500px;
+    padding-left: 560px;
 }
 
 .splide__slide {
@@ -430,13 +430,14 @@ footer {
 }
 
 .contact-us-container {
-    display: grid;
-    grid-template-columns: .75fr 2fr .75fr;
-    grid-template-areas: "social contacts btn";
+    /* display: grid;
+    grid-template-columns: .75fr 1fr .75fr;
+    grid-template-areas: "social contacts btn"; */
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 25px;
-    padding-left: 740px;
+    padding-left: 40px;
     padding-right: 40px;
 }
 
@@ -446,18 +447,19 @@ footer {
 
 .social {
     grid-area: social;
-    width: 150px;
+    width: 300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .social img {
-    width: 35px;
-    height: 35px;
+    width: 45px;
 }
 
 .contacts {
     grid-area: contacts;
+    width: 18%;
 }
 
 .contacts h2 {
@@ -473,7 +475,7 @@ footer {
 .contact-us-container .btn {
     grid-area: btn;
     font-size: 1.25em;
-    width: 100%;
+    width: fit-content;
 }
 
 .footer-info {
