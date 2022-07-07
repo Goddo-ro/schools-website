@@ -40,6 +40,8 @@ body {
     overflow-x: hidden;
     margin-right: 80px;
     padding: 4px;
+    position: fixed;
+    z-index: 1;
 }
 
 .sidenav-el {
@@ -94,6 +96,7 @@ body {
 
 .main {
     width: 100%;
+    margin-left: 450px;
 }
 
 /* topnav */
@@ -183,7 +186,7 @@ header input[type=text]::placeholder {
 
 .swiper-slide img {
     width: 100%;
-    height: 70%;
+    height: 92%;
     object-fit: cover;
     border-radius: 8px;
     position: absolute;
@@ -193,31 +196,30 @@ header input[type=text]::placeholder {
 .swiper-slide p {
     position: absolute;
     bottom: 0;
-    height: 60px;
+    height: 20px;
 }
 
 .news-content {
     width: 100%;
-    background: linear-gradient(45deg, var(--light-blue), var(--blue));
+    background-color: linear-gradient(45deg, var(--light-blue), var(--blue));
     border-radius: 8px;
 }
 
 .news-item p {
-    font-size: 1.5em;
     margin: 0;
-    margin-top: 8px;
+    margin-top: 8px;    
     overflow-y: auto;
 }
 
 .news-1 {
-    max-height: 500px;
+    max-height: 800px;
     grid-area: left;
     height: 100%;
 }
 
 .news-2 img,
 .news-3 img {
-    max-height: 100px;
+    max-height: 150px;
 }
 
 .news-2 {
@@ -405,18 +407,16 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: row;
-}
-
-.cooperators {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
     padding: 10px;
 }
 
-.cooperators div {
+.cooperators {
+    padding-left: 500px;
+}
+
+.splide__slide {
     display: flex;
     align-items: center;
-    margin: 0 10px;
 }
 
 .cooperators img {
@@ -436,7 +436,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin-bottom: 25px;
-    padding-left: 40px;
+    padding-left: 740px;
     padding-right: 40px;
 }
 
