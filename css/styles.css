@@ -38,7 +38,6 @@ body {
     width: 16%;
     min-width: 300px;
     overflow-x: hidden;
-    margin-right: 80px;
     padding: 4px;
     position: fixed;
     z-index: 1;
@@ -96,7 +95,7 @@ body {
 
 .main {
     width: 100%;
-    margin-left: 440px;
+    margin-left: 380px;
 }
 
 /* topnav */
@@ -411,7 +410,7 @@ footer {
 }
 
 .cooperators {
-    padding-left: 560px;
+    padding-left: 440px;
 }
 
 .splide__slide {
@@ -459,7 +458,7 @@ footer {
 
 .contacts {
     grid-area: contacts;
-    width: 18%;
+    width: 22%;
 }
 
 .contacts h2 {
