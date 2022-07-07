@@ -9,6 +9,8 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/splide.min.css">
+
+    <link href="css/bvi.min.css" rel="stylesheet">
     <title>Главная</title>
 </head>
 <body>
@@ -80,8 +82,9 @@
                     <p>Войти</p>
                 </button>
             </header>
+
             <section class="news">
-                <div class="news-item news-1">
+                <div class="news-item news-1 bvi-hide">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide">
@@ -254,6 +257,10 @@
             } );
 
             splide.mount();
+    </script>
+    <script src="js/bvi.min.js"></script>
+    <script>
+        new isvek.Bvi();
     </script>
 </body>
 </html>
