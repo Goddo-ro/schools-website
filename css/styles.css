@@ -441,17 +441,17 @@ footer {
     justify-content: center;
     align-items: center;
     margin-bottom: 25px;
-    padding-left: 40px;
+    padding-left: 400px;
     padding-right: 40px;
 }
 
 .contact-us-container div:not(:last-child) {
-    margin-right: 150px;
+    margin-right: 25px;
 }
 
 .social {
     grid-area: social;
-    width: 300px;
+    width: 240px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -463,7 +463,7 @@ footer {
 
 .contacts {
     grid-area: contacts;
-    width: 22%;
+    width: 28%;
 }
 
 .contacts h2 {
@@ -478,7 +478,6 @@ footer {
 
 .contact-us-container .btn {
     grid-area: btn;
-    font-size: 1.25em;
     width: fit-content;
 }
 
