@@ -18,10 +18,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--background-color);
-    padding: 20px 50px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-bottom: 0;
     overflow-x: hidden;
 }
@@ -30,7 +30,7 @@ body {
     display: flex;
     flex-direction: row;
     max-width: 1300px;
-    padding: 0;
+    padding: 20px 50px;
 }
 
 a {
@@ -99,8 +99,11 @@ a {
 /* main */
 
 .main {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-left: 380px;
+    transform: translateX(0);
     transition: transform 0.5s; 
 }
 
@@ -449,9 +452,7 @@ header input[type=text]::placeholder {
 
 footer {
     margin-top: auto;
-    position: absolute;
-    left: 0;
-    right: 0;
+    width: 100%;
 }
 
 /* cooperation */
@@ -542,9 +543,7 @@ footer {
     font-size: .75em;
     padding-left: 10px;
     padding-right: 10px;
-    position: absolute;
-    left: 0;
-    right: 0;
+    margin-top: auto;
     transition: none;
 }
 
@@ -572,10 +571,6 @@ footer {
         position: fixed;
         left: 10px;
         transition: all .5s; 
-    }
-
-    .menu-btn.active {
-        left: 32%;
     }
 
     .swiper {
