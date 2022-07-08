@@ -228,17 +228,16 @@ header input[type=text]::placeholder {
 /* news */
 
 .news {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas:
-        "left center1"
-        "left center2";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 40px;
 }
 
 .swiper {
-    width: 600px;
+    width: 500px;
     height: 100%;
 }
 
@@ -248,7 +247,7 @@ header input[type=text]::placeholder {
 
 .swiper-slide img {
     width: 100%;
-    height: 92%;
+    height: 93%;
     object-fit: cover;
     border-radius: 8px;
     position: absolute;
@@ -273,6 +272,13 @@ header input[type=text]::placeholder {
     overflow-y: auto;
 }
 
+.add-news-container {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .news-1 {
     grid-area: left;
     height: 100%;
@@ -283,10 +289,15 @@ header input[type=text]::placeholder {
     max-height: 150px;
 }
 
+.news-2 p,
+.news-3 p {
+    margin: 0;
+}
+
 .news-2 {
     grid-area: center1;
-    margin-bottom: 0;
-  }
+    margin-bottom: 10px;
+}
 
 .news-3  {
     margin: 0;
@@ -573,6 +584,11 @@ footer {
         transition: all .5s; 
     }
 
+    .news {
+        width: 80%;
+        justify-content: space-around;
+    }
+
     .swiper {
         width: 650px;
     }
@@ -587,9 +603,19 @@ footer {
     }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1200px) {
     .swiper {
         width: 500px;
+    }
+
+    .news-2, .news-3 {
+        width: 200px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .swiper {
+        width: 400px;
     }
 }
 
@@ -609,24 +635,36 @@ footer {
         flex-direction: column;
         justify-content: space-around;
     }
+
+    .services-div h3 {
+        font-size: 1em;
+    }
+
+    .services-div p {
+        font-size: .75em;
+    }
+
+    .food-info a {
+        font-size: .75em;
+    }
+
+    .enroll-child img {
+        width: 60px;
+        height: 60px;
+    }
 }
 
-@media (max-width: 830px) {
-    .eye-button, .enter-btn {
+@media (max-width: 880px) {
+    .eye-button {
         display: none;
     }
 
-    .news {
-        grid-template-columns: repeat(2,  1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas:
-            "left left"
-            "left left"
-            "center1 center2";
+    .swiper {
+        width: 400px;
     }
 
-    .swiper {
-        width: 600px;
+    .content-container p {
+        font-size: 1.25em;
     }
 
     .cooperators img {
@@ -648,6 +686,7 @@ footer {
     .contacts h2 {
         font-size: 1em;
     }
+
     .contacts p {
         font-size: .75em;
     }
@@ -655,10 +694,118 @@ footer {
     .contact-us-container button {
         width: 100%;
     } 
-}
 
-@media (max-width: 690px) {
+    .news {
+        flex-direction: column;
+    }
+
+    .swiper {
+        width: 600px;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+    .add-news-container {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .swiper {
+        width: 500px;
+    }
+
+    .news-2, .news-3 {
+        width: 40%;
+    }
+
+    .info-item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .school-results h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .results-item h2 {
+        font-size: 2rem;
+    }
+
+    .results-item p {
+        font-size: 1rem;
+    }
+
     .footer-info {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 735px) {
+    .offers {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "second"
+            "first";
+        grid-gap: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 260px;
+        width: 80%;
+    }
+
+    .image-container {
+        padding: 0;
+    }
+
+    .content-container {
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 700px) {
+    .swiper {
+        width: 340px;
+        height: 200px;
+    }
+
+    .swiper-slide img {
+        height: 90%;
+    }
+
+    .info-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .services-container {
+        flex-direction: column;
+    }
+
+    .services-div:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    
+    .services-div {
+        width: 80%;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .offers {
+        width: 340px;
+        margin-bottom: 180px;
+    }
+
+    .content-container p {
+        font-size: 1em;
+    }
+
+    .image-container img {
+        height: 150px;
     }
 }
