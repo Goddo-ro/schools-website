@@ -40,8 +40,7 @@ a {
 /* sidenav */
 
 .sidenav {
-    width: 16%;
-    min-width: 300px;
+    width: 300px;
     overflow-x: hidden;
     padding: 4px;
     position: fixed;
@@ -393,7 +392,6 @@ header input[type=text]::placeholder {
 .results-item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -841,5 +839,27 @@ footer {
 
     .image-container img {
         height: 150px;
+    }
+    
+    .school-results h2 {
+        font-size: 1rem;
+    }
+    
+    .results-item p {
+        font-size: .5rem;
+    }
+
+    .contact-us-container {
+        grid-template-areas: 
+            "contacts contacts"
+            "social btn"
+    }
+
+    .contacts {
+        width: 100%;
+    }
+
+    .social {
+        width: 60%;
     }
 }
