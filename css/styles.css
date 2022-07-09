@@ -45,6 +45,8 @@ a {
     padding: 4px;
     position: fixed;
     z-index: 1;
+    height: 100%;
+    padding-bottom: 30px;
 }
 
 .sidenav-el {
@@ -659,6 +661,15 @@ footer {
 }
 
 @media (max-width: 880px) {
+    header {
+        grid-template-columns: 1fr .25fr;
+        grid-template-areas: "left right";
+    }
+
+    header input[type=text] {
+        width: 100%;
+    }
+
     .eye-button {
         display: none;
     }
@@ -828,6 +839,23 @@ footer {
 }
 
 @media (max-width: 600px) {
+    header {
+        display: block;
+    }
+
+    .enter-btn {
+        display: none;
+    }
+
+    .swiper {
+        width: 250px;
+        height: 145px;
+    }
+
+    .news-2 img, .news-3 img {
+        height: 75px;
+    }
+
     .offers {
         width: 340px;
         margin-bottom: 180px;
@@ -840,13 +868,17 @@ footer {
     .image-container img {
         height: 150px;
     }
-    
-    .school-results h2 {
-        font-size: 1rem;
+
+    .info-item p {
+        font-size: .8rem;
     }
-    
-    .results-item p {
-        font-size: .5rem;
+
+    .school-results h2 {
+        font-size: 1.2rem;
+    }
+
+    .services-div h3 {
+        font-size: 1rem;
     }
 
     .contact-us-container {
