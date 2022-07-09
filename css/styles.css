@@ -906,6 +906,7 @@ footer {
 
     .contact-us-container {
         padding-left: 10px;
+        grid-template-columns: .25fr 1fr;
         grid-template-areas: 
             "contacts contacts"
             "social btn"
@@ -917,9 +918,5 @@ footer {
 
     .social {
         width: 60%;
-    }
-
-    .contact-us-container .btn {
-        width: 200px;
     }
 }
