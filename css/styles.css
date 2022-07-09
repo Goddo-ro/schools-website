@@ -469,7 +469,7 @@ footer {
 /* cooperation */
 
 .cooperators, .contact-us {
-    max-width: 1300px;
+    max-width: 1000px;
 }
 
 .cooperation, .contact-us {
@@ -481,7 +481,7 @@ footer {
 }
 
 .cooperators {
-    padding-left: 440px;
+    padding-left: 480px;
 }
 
 .splide__slide {
@@ -582,6 +582,7 @@ footer {
     .menu-btn {
         display: block;
         position: fixed;
+        top: 60px;
         left: 10px;
         transition: all .5s; 
     }
@@ -859,6 +860,14 @@ footer {
     .offers {
         width: 340px;
         margin-bottom: 180px;
+    }
+
+    .offers {
+        width: 70%;
+    }
+
+    .cooperators {
+        padding-left: 24px;
     }
 
     .content-container p {
