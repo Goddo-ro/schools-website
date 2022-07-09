@@ -840,6 +840,14 @@ footer {
 }
 
 @media (max-width: 600px) {
+    .menu-btn.active {
+        transform: translateX(300px);
+    }
+
+    .all-content-container {
+        padding: 10px;
+    }
+
     header {
         display: block;
     }
@@ -849,21 +857,27 @@ footer {
     }
 
     .swiper {
-        width: 250px;
-        height: 145px;
+        width: 400px;
+        height: 200px;
+    }
+
+    .add-news-container {
+        padding: 0;
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    .news-2, .news-3 {
+        width: 46%;
     }
 
     .news-2 img, .news-3 img {
-        height: 75px;
+        height: 120px;
     }
 
     .offers {
-        width: 340px;
+        width: 80%;
         margin-bottom: 180px;
-    }
-
-    .offers {
-        width: 70%;
     }
 
     .cooperators {
