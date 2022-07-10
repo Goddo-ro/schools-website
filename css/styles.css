@@ -226,8 +226,6 @@ header input[type=text]::placeholder {
     color: var(--blue);
 }
 
-/* news */
-
 .news {
     display: flex;
     flex-direction: row;
@@ -235,30 +233,77 @@ header input[type=text]::placeholder {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
+    width: 100%;
 }
 
-.swiper {
-    width: 500px;
+.slideshow-container {
+    width: 72%;
+    position: relative;
+    margin: auto;
+    margin-right: 20px;
+}
+
+.mySlides {
+    width: 100%;
+    display: none;  
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.mySlides img {
+    margin-bottom: 20px;
+    border-radius: 8px;
     height: 100%;
 }
-
-.swiper-slide {
-    text-align: left;
-}
-
-.swiper-slide img {
-    width: 100%;
-    height: 93%;
-    object-fit: cover;
-    border-radius: 8px;
-    position: absolute;
-    top: 0;
-}
-
-.swiper-slide p {
+  
+.text {
     position: absolute;
     bottom: 0;
+    width: 100%;
     height: 20px;
+    overflow-y: scroll;
+}
+  
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 .news-content {
@@ -274,35 +319,30 @@ header input[type=text]::placeholder {
 }
 
 .add-news-container {
-    width: 24%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.news-1 {
-    grid-area: left;
-    height: 100%;
-}
-
 .news-2 img,
 .news-3 img {
-    max-height: 150px;
+    width: 100%;
 }
 
 .news-2 p,
 .news-3 p {
+    overflow-y: scroll;
     margin: 0;
+    width: 100%;
 }
 
 .news-2 {
-    grid-area: center1;
     margin-bottom: 10px;
 }
 
 .news-3  {
     margin: 0;
-    grid-area: center2;
 }
 
 /* Offers */
@@ -587,15 +627,6 @@ footer {
         transition: all .5s; 
     }
 
-    .news {
-        width: 80%;
-        justify-content: space-around;
-    }
-
-    .swiper {
-        width: 650px;
-    }
-
     .cooperators,
     .contact-us-container {
         padding-left: 0;
@@ -603,22 +634,6 @@ footer {
 
     .contact-us-container {
         justify-content: space-around;
-    }
-}
-
-@media (max-width: 1200px) {
-    .swiper {
-        width: 500px;
-    }
-
-    .news-2, .news-3 {
-        width: 200px;
-    }
-}
-
-@media (max-width: 1050px) {
-    .swiper {
-        width: 400px;
     }
 }
 
@@ -675,9 +690,30 @@ footer {
         display: none;
     }
 
-    .swiper {
-        width: 400px;
+    .news {
+        flex-direction: column;
     }
+    
+    .slideshow-container {
+        width: 100%;
+        position: relative;
+        margin: auto;
+        margin-right: 20px;
+    }
+
+    .add-news-container {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .news-2 {
+        margin-right: 30px;
+    }
+
+    /* .news-2, .news-3 {
+        width: 40%;
+    } */
 
     .content-container p {
         font-size: 1.25em;
@@ -716,30 +752,6 @@ footer {
     .contact-us-container button {
         width: 100%;
     } 
-
-    .news {
-        flex-direction: column;
-    }
-
-    .swiper {
-        width: 600px;
-        height: 300px;
-        margin-bottom: 10px;
-    }
-
-    .add-news-container {
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-around;
-    }
-
-    .swiper {
-        width: 500px;
-    }
-
-    .news-2, .news-3 {
-        width: 40%;
-    }
 
     .info-item img {
         width: 50px;
@@ -854,25 +866,6 @@ footer {
 
     .enter-btn {
         display: none;
-    }
-
-    .swiper {
-        width: 260px;
-        height: 200px;
-    }
-
-    .add-news-container {
-        padding: 0;
-        margin: 0;
-        justify-content: space-around;
-    }
-
-    .news-2, .news-3 {
-        width: 46%;
-    }
-
-    .news-2 img, .news-3 img {
-        height: 120px;
     }
 
     .offers {
