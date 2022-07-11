@@ -875,6 +875,14 @@ footer {
         font-size: 1.2rem;
     }
 
+    .results-item:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    .results-item p {
+        width: 100%;
+    }
+
     .services-div h3 {
         font-size: 1rem;
     }
