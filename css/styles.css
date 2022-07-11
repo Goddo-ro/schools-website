@@ -606,8 +606,6 @@ footer {
     }
 
     header {
-        margin-left: 30px;
-        margin-right: 20px;
         grid-template-columns: .1.2fr .6fr .2fr;
         grid-template-areas:
             "left center right"
@@ -677,17 +675,9 @@ footer {
 }
 
 @media (max-width: 880px) {
-    header {
-        grid-template-columns: 1fr .25fr;
-        grid-template-areas: "left right";
-    }
 
     header input[type=text] {
         width: 100%;
-    }
-
-    .eye-button {
-        display: none;
     }
 
     .news {
@@ -724,7 +714,7 @@ footer {
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 
             "contacts social"
-            "contacts btn"
+            "contacts btn";
     }
 
     .social {
@@ -773,6 +763,14 @@ footer {
 }
 
 @media (max-width: 735px) {
+    header {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "left left"
+            "center right";
+        gap: 20px;
+    }
+
     .offers {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
@@ -854,14 +852,6 @@ footer {
 
     .all-content-container {
         padding: 30px;
-    }
-
-    header {
-        display: block;
-    }
-
-    .enter-btn {
-        display: none;
     }
 
     .offers {
