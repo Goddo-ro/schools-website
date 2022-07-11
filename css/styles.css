@@ -284,10 +284,6 @@ header input[type=text]::placeholder {
     height: 20px;
     overflow-y: scroll;
 }
-  
-.active {
-    background-color: #717171;
-}
 
 .fade {
     -webkit-animation-name: fade;
