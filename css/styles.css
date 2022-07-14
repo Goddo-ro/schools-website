@@ -725,6 +725,91 @@ footer {
     margin-right: 50px;
 }
 
+/* Food */
+
+.food {
+    margin: 32px auto 48px auto;
+}
+
+.food-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+        "first first"
+        "second second"
+        "second second"
+        "third fourth"
+        "fifth fifth";
+    gap: 30px;
+}
+
+.food-grid > * {
+    border-radius: 12px;
+}
+
+.light-blue-btn, .grid-info {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+}
+
+.light-blue-btn {
+    font-size: 1.25rem;
+}
+
+.menu {
+    grid-area: first;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    padding-top: 28px;
+}
+
+.menu div {
+    text-align: left;
+}
+
+.menu h3 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.menu .btn {
+    background-color: var(--dark-blue);
+    color: white;
+    font-size: 1rem;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu p {
+    font-size: 1rem;
+}
+
+.grid-info {
+    grid-area: second;
+    background-color: #ffffff;
+    padding: 24px 48px;
+}
+
+.rules {
+    grid-area: third;
+}
+
+.benefit {
+    grid-area: fourth;
+}
+
+.price {
+    grid-area: fifth;
+}
+
 @media (max-width: 1300px) {
     .main {
         margin-left: 0px;
