@@ -347,14 +347,7 @@ header input[type=text]::placeholder {
     width: 100%;
     height: auto;
     display: flex;
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: none;
-    grid-template-areas:
-        "first second";
-    grid-gap: 15px; */
     background: #ffffff;
-    margin-bottom: 100px;
 }
 
 .offers-container {
@@ -405,6 +398,7 @@ header input[type=text]::placeholder {
     text-align: center;
     column-gap: 20px;
     row-gap: 40px;
+    margin-top: 100px;
     margin-bottom: 60px;
 }
 
@@ -596,6 +590,25 @@ footer {
     padding-right: 10px;
     margin-top: auto;
     transition: none;
+}
+
+/* School info */
+
+.info-links {
+    margin-top: 16px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-link:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.info-link {
+    padding: 16px 8px;
+    font-size: 1.25rem;
+    border-radius: 10px;
 }
 
 @media (max-width: 1300px) {
