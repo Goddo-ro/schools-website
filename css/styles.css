@@ -619,68 +619,68 @@ footer {
     margin-bottom: 100px;
 }
 
-.news-container {
+.grid-container {
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
-        "news-1 news-1 news-2"
-        "news-3 news-4 news-4"
-        "news-5 news-5 news-6";
+        "el-1 el-1 el-2"
+        "el-3 el-4 el-4"
+        "el-5 el-5 el-6";
     gap: 30px;
 }
 
-.news-element {
+.grid-element {
     height: 240px;
     border-radius: 8px;
     background: linear-gradient(to left, #CBDFFD, #5BA1FF);
     text-align: center;
 }
 
-.news-element {
+.grid-element {
     display: flex;
     align-items: center;
     justify-content: center
 }
 
-.news-photo div,
-.news-photo img {
+.grid-photo div,
+.grid-photo img {
     width: 50%;
 }
 
-.news-photo div {
+.grid-photo div {
     font-size: 1.25rem;
 }
 
-.news-photo img {
+.grid-photo img {
     border-top-right-radius: inherit;
     border-bottom-right-radius: inherit;
     height: 100%;
 }
 
-#news-1 {
-    grid-area: news-1;
+#el-1 {
+    grid-area: el-1;
 }
 
-#news-2 {
-    grid-area: news-2;
+#el-2 {
+    grid-area: el-2;
 }
 
-#news-3 {
-    grid-area: news-3;
+#el-3 {
+    grid-area: el-3;
 }
 
-#news-4 {
-    grid-area: news-4;
+#el-4 {
+    grid-area: el-4;
 }
 
-#news-5 {
-    grid-area: news-5;
+#el-5 {
+    grid-area: el-5;
 }
 
-#news-6 {
-    grid-area: news-6;
+#el-6 {
+    grid-area: el-6;
 }
 
 /* Enroll to school */
