@@ -728,11 +728,15 @@ footer {
 /* Food */
 
 .food {
-    margin: 32px auto 48px auto;
+    margin: 32px auto 20px auto;
+}
+
+.food h2 {
+    margin-bottom: 20px;
 }
 
 .food-grid {
-    margin-top: 20px;
+    margin-bottom: 40px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -749,7 +753,7 @@ footer {
     border-radius: 12px;
 }
 
-.light-blue-btn, .grid-info {
+.light-blue-btn, .supplier-information {
     padding: 24px;
     display: flex;
     align-items: center;
@@ -761,7 +765,7 @@ footer {
     font-size: 1.25rem;
 }
 
-.menu {
+.food-menu {
     grid-area: first;
     display: flex;
     justify-content: space-between;
@@ -769,17 +773,17 @@ footer {
     padding-top: 28px;
 }
 
-.menu div {
+.food-menu div {
     text-align: left;
 }
 
-.menu h3 {
+.food-menu h3 {
     font-weight: normal;
     font-size: 1.5rem;
     margin-bottom: 4px;
 }
 
-.menu .btn {
+.food-menu .btn {
     background-color: var(--dark-blue);
     color: white;
     font-size: 1rem;
@@ -788,11 +792,11 @@ footer {
     padding-right: 20px;
 }
 
-.menu p {
+.food-menu p {
     font-size: 1rem;
 }
 
-.grid-info {
+.supplier-information {
     grid-area: second;
     background-color: #ffffff;
     padding: 24px 48px;
@@ -808,6 +812,10 @@ footer {
 
 .price {
     grid-area: fifth;
+}
+
+.supplier-information {
+    border-radius: 12px;
 }
 
 @media (max-width: 1300px) {
