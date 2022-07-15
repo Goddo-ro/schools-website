@@ -713,6 +713,10 @@ footer {
     margin-bottom: 100px;
 }
 
+.documents h2 {
+    margin-bottom: 12px;
+}
+
 .document {
     font-weight: bold;
     display: flex;
