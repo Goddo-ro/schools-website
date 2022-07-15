@@ -862,6 +862,14 @@ section + .contact-us textarea {
 
 #agree {
     width: auto;
+    height: auto;
+    margin: 0;
+}
+
+section + .contact-us div {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;    
 }
 
 section + .contact-us .submit-btn {
