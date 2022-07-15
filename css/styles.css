@@ -109,6 +109,10 @@ a {
     transition: transform 0.5s; 
 }
 
+section h2 {
+    margin-bottom: 30px;
+}
+
 /* topnav */
 
 header {
@@ -445,6 +449,7 @@ header input[type=text]::placeholder {
 /* Add services */
 
 .add-services {
+    margin-top: 100px;
     margin-bottom: 40px;
 }
 
@@ -709,7 +714,7 @@ footer {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 .documents h2,
@@ -915,6 +920,14 @@ section + .services div .unmargin {
     display: block; 
     color: var(--black);
     text-decoration: underline;
+}
+
+/* Exam */
+
+.useful-links .spec-links-container {
+    border-radius: 8px;
+    padding: 20px;
+    background: #ffffff;
 }
 
 /* Distance learning */
