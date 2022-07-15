@@ -917,6 +917,37 @@ section + .services div .unmargin {
     text-decoration: underline;
 }
 
+/* Distance learning */
+
+.education {
+    margin-top: 30px;
+}
+
+.education > * {
+    margin-bottom: 30px;
+}
+
+.education .documents {
+    margin-top: 8px;
+}
+
+.link-document {
+    background: none;
+    padding: 0;
+    text-decoration: underline;
+    border: none;
+}
+
+.link-document:hover {
+    text-decoration: none;
+    border: none;
+    color: var(--dark-blue);
+}
+
+.link-document img {
+    margin-right: 20px;
+}
+
 @media (max-width: 1300px) {
     .main {
         margin-left: 0px;
