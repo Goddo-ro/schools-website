@@ -111,6 +111,7 @@ a {
 
 section h2 {
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 /* topnav */
@@ -912,8 +913,10 @@ section + .services div .unmargin {
 }
 
 .spec-link img {
+    margin-top: 2px;
     margin-left: 4px;
     margin-right: 8px;
+    height: 16px;
 }
 
 #services-order {
