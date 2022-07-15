@@ -885,7 +885,7 @@ section + .contact-us .submit-btn {
 /* Services */
 
 section + .services {
-    margin: 40px auto 70px auto;
+    margin: 40px auto auto auto;
 }
 
 section + .services div {
