@@ -30,7 +30,7 @@ body {
 .all-content-container {
     display: flex;
     flex-direction: row;
-    max-width: 1300px;
+    max-width: 1600px;
     padding: 20px 50px;
 }
 
@@ -710,10 +710,12 @@ footer {
 .documents {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
     margin-bottom: 100px;
 }
 
-.documents h2 {
+.documents h2,
+.documents a {
     margin-bottom: 12px;
 }
 
