@@ -864,6 +864,55 @@ section + .contact-us .submit-btn {
     cursor: pointer;
 }
 
+/* Services */
+
+section + .services {
+    margin: 40px auto 70px auto;
+}
+
+section + .services div {
+    margin-left: 30px;
+}
+
+section + .services div > * {
+    margin-bottom: 20px;
+}
+
+section + .services h2 {
+    margin-bottom: 30px;
+}
+
+section + .services div .unmargin {
+    margin-bottom: 0;
+}
+
+.spec-links-container a {
+    margin: 0;
+}
+
+.spec-link {
+    display: flex;
+    flex-direction: row;
+    color: var(--black);
+    text-decoration: underline;
+}
+
+.spec-link:hover,
+#services-order:hover {
+    color: var(--blue);
+}
+
+.spec-link img {
+    margin-left: 4px;
+    margin-right: 8px;
+}
+
+#services-order {
+    display: block; 
+    color: var(--black);
+    text-decoration: underline;
+}
+
 @media (max-width: 1300px) {
     .main {
         margin-left: 0px;
