@@ -8,6 +8,7 @@
     --blue-rgb: 4, 104, 255;
     --grey: #A3A7C1;
     --light-grey: #EFEFEF;
+    --button-border: #4079AD;
 }
 
 * {
@@ -370,7 +371,7 @@ header input[type=text]::placeholder {
     line-height: 2rem;
 }
 
-.contact-us {
+.offers-container .contact-us {
     border-radius: 8px;
     border: 1px solid var(--dark-blue);
     color: var(--dark-blue);
@@ -379,8 +380,8 @@ header input[type=text]::placeholder {
     padding: 14px 20px;
 }
 
-.contact-us:hover,
-.contact-us:focus {
+.offers-container .contact-us:hover,
+.offers-container .contact-us:focus {
     background: var(--dark-blue);
     color: #ffffff;
 }
@@ -500,11 +501,11 @@ footer {
 
 /* cooperation */
 
-.cooperators, .contact-us {
+.cooperators, .offers-container .contact-us {
     max-width: 1000px;
 }
 
-.cooperation, .contact-us {
+.cooperation, .offers-container .contact-us {
     background: #ffffff;
     display: flex;
     justify-content: center;
@@ -816,6 +817,51 @@ footer {
 
 .supplier-information {
     border-radius: 12px;
+}
+
+/* Contact us */
+
+section + .contact-us {
+    width: 70%;
+    margin: 40px auto;
+}
+
+section + .contact-us label {
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+section + .contact-us input {
+    margin-bottom: 16px;
+    height: 30px;
+}
+
+section + .contact-us h2 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+section + .contact-us input,
+section + .contact-us textarea {
+    padding: 6px;
+    margin-top: 4px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--button-border);
+}
+
+#agree {
+    width: auto;
+}
+
+section + .contact-us .submit-btn {
+    border: none;
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    font-size: 1.25rem;
+    height: auto;
+    padding: 8px;
+    cursor: pointer;
 }
 
 @media (max-width: 1300px) {
