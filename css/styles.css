@@ -614,9 +614,10 @@ footer {
 
 /* News */
 
-.news-section {
+.news-events-section {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
     margin-bottom: 100px;
 }
 
@@ -637,21 +638,18 @@ footer {
     border-radius: 8px;
     background: linear-gradient(to left, #CBDFFD, #5BA1FF);
     text-align: center;
-}
-
-.grid-element {
     display: flex;
     align-items: center;
     justify-content: center
 }
 
+.grid-element p {
+    font-size: 1.25rem;
+}
+
 .grid-photo div,
 .grid-photo img {
     width: 50%;
-}
-
-.grid-photo div {
-    font-size: 1.25rem;
 }
 
 .grid-photo img {
