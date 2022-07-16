@@ -1294,4 +1294,8 @@ section + .services div .unmargin {
     .contacts p {
         font-size: 1rem;
     }
+
+    section + .services div {
+        margin-left: 16px;
+    }
 }
