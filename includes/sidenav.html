@@ -2,7 +2,7 @@
     <img class="sidenav-img" src="images/sidenav/icon_school.png">
     <h2>Инженерно-технологическая школа №27</h2>
 </div>
-<a href="index.html" class="sidenav-el sidenav-link active-link">
+<a href="index.html" class="sidenav-el sidenav-link">
     <img class="sidenav-img" src="images/sidenav/Vector1.png">
     <p>Главная</p>
 </a>
@@ -51,4 +51,13 @@
     <p>Противодействие коррупции</p>
 </a>
 
-<script src="../js/changeActivePage.js" type="text/javascript"></script>
+<script>
+    const sidenav = document.querySelector('.sidenav');
+    const sidenavElements = sidenav.querySelectorAll('.sidenav-link');
+    for (let i = 0; i < sidenavElements.length; i++) {
+        sidenavElements[i].classList.remove('active');
+        if (sidenavElements[i].textContent.trim() == document.title) {
+            sidenavElements[i].classList.add('active-link');
+        }
+    }
+</script>
