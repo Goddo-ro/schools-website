@@ -134,12 +134,11 @@ header {
 .menu-btn {
     display: none;
     width: 30px;
-	height: 30px;
+	height: 100%;
 	position: relative;
 	z-index:2;
 	overflow: hidden;
     grid-area: button;
-    margin-top: 5px;
     cursor: pointer;
 }
 
@@ -155,7 +154,7 @@ header {
 }
 
 .menu-btn span:nth-of-type(2) {
-	top: calc(50% - 5px);
+	top: calc(50% - 4px);
 }
 
 .menu-btn span:nth-of-type(3) {
@@ -227,6 +226,16 @@ header input[type=text]::placeholder {
 .enter-btn {
     grid-area: right;
     color: var(--blue);
+}
+
+.sidenav-btn {
+    display: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sidenav .eye-button {
+    margin-top:  50px;
 }
 
 .news {
@@ -1169,11 +1178,21 @@ section + .services div .unmargin {
 
 @media (max-width: 735px) {
     header {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-            "left left"
-            "center right";
-        gap: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header input {
+        width: 100%;
+    }
+
+    .eye-button,
+    .enter-btn {
+        display: none;
+    }
+
+    .sidenav-btn {
+        display: block;
     }
 
     .content-container {
