@@ -507,29 +507,31 @@ footer {
 
 /* cooperation */
 
-.cooperators, .offers-container .contact-us {
-    max-width: 1000px;
+.cooperation > ul {
+    position: relative;
+    left: 0;
+    top: 0; 
+    width: 800px;
+    height: 200px; 
 }
 
-.cooperation, .offers-container .contact-us {
-    background: #ffffff;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    padding: 10px;
+ul li {
+    display: block;
+    position: absolute;
+    top: 0;
+    float: left;
+    width: 25%;
+    list-style-type: none;
+    padding: 20px;
+    height: 200px; 
+    opacity: 0;
+    padding-top: 40px;
+    text-align: center;
+    transition: 1s opacity; 
 }
 
-.cooperators {
-    padding-left: 480px;
-}
-
-.splide__slide {
-    display: flex;
-    align-items: center;
-}
-
-.cooperators img {
-    width: 100px;
+.active-cooperator {
+    opacity: 1;
 }
 
 /* contact us */
