@@ -1179,6 +1179,21 @@ section + .services div .unmargin {
     .contact-us-container .btn {
         width: 100%;
     }
+
+    .grid-container {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+            "el-1"
+            "el-2"
+            "el-3"
+            "el-4"
+            "el-5"
+            "el-6";
+        gap: 30px;
+    }
 }
 
 @media (max-width: 700px) {
