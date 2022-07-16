@@ -511,7 +511,7 @@ footer {
     width: 100vw;
     height: 150px;
     margin: 50px auto;
-    padding-left: calc(100% - 1500px);
+    padding-left: 22%;
     background: #fff;
 }
 
@@ -519,7 +519,7 @@ footer {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 80%;
     height: 100%;   
     padding-right: 20px;
 }
@@ -1013,7 +1013,7 @@ section + .services div .unmargin {
         transition: all .5s; 
     }
 
-    .cooperators,
+    .cooperation,
     .contact-us-container {
         padding-left: 0;
     }
@@ -1067,6 +1067,10 @@ section + .services div .unmargin {
 
     .cooperation ul {
         height: 150px;
+    }
+
+    .cooperation > ul {
+        width: 100%;
     }
 
     ul li img {
