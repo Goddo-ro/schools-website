@@ -1272,10 +1272,6 @@ section + .services div .unmargin {
 }
 
 @media (max-width: 600px) {
-    .menu-btn.active {
-        transform: translateX(330px);
-    }
-
     .all-content-container {
         padding: 30px;
     }
