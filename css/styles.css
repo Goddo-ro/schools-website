@@ -133,10 +133,7 @@ header {
 
 .menu-btn {
     display: none;
-}
-
-.menu-btn {
-	width: 30px;
+    width: 30px;
 	height: 30px;
 	position: relative;
 	z-index:2;
@@ -994,9 +991,9 @@ section + .services div .unmargin {
     }
 
     header {
-        grid-template-columns: .1.2fr .6fr .2fr;
+        grid-template-columns: .1fr 1.2fr .6fr .2fr;
         grid-template-areas:
-            "left center right"
+            "button left center right"
     }
 
     .menu {
@@ -1007,9 +1004,6 @@ section + .services div .unmargin {
 
     .menu-btn {
         display: block;
-        position: fixed;
-        top: 60px;
-        left: 10px;
         transition: all .5s; 
     }
 
