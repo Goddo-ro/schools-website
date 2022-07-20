@@ -28,9 +28,8 @@ body {
 }
 
 .all-content-container {
-    display: flex;
-    flex-direction: row;
-    max-width: 1600px;
+    max-width: 1200px;
+    width: 70%;
     padding: 20px 50px;
 }
 
@@ -45,6 +44,7 @@ a {
     overflow-x: hidden;
     padding: 4px;
     position: fixed;
+    transform: translateX(-200px);
     z-index: 1;
     height: 100%;
     padding-bottom: 30px;
@@ -100,11 +100,15 @@ a {
 
 /* main */
 
+.main, 
+header {
+    margin-left: 150px;
+}
+
 .main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-left: 380px;
     transform: translateX(0);
     transition: transform 0.5s; 
 }
@@ -121,9 +125,11 @@ header {
     grid-gap: 30px;
     margin-top: 40px;
     margin-bottom: 60px;
-    grid-template-columns: 1.2fr .6fr .2fr;
+    grid-template-columns: 1.2fr .2fr .1fr;
     grid-template-areas:
-        "left center right"
+        "left center right";
+    width: 100%;
+    transition: transform 0.5s; 
 }
 
 .header-el {
@@ -995,11 +1001,16 @@ section + .services div .unmargin {
 }
 
 @media (max-width: 1300px) {
+    .all-content-container {
+        width: 100%;
+    }
+
     .main {
         margin-left: 0px;
     }
 
     header {
+        margin-left: 0;
         grid-template-columns: .1fr 1.2fr .6fr .2fr;
         grid-template-areas:
             "button left center right"
@@ -1013,7 +1024,6 @@ section + .services div .unmargin {
 
     .menu-btn {
         display: block;
-        transition: all .5s; 
     }
 
     .cooperation,
@@ -1178,12 +1188,31 @@ section + .services div .unmargin {
 
 @media (max-width: 735px) {
     header {
-        display: flex;
-        justify-content: space-between;
+        grid-template-columns: .1fr 1fr;
+        gap: 0;
+        position: fixed;
+        top: -40px;
+        left: 0;
+        z-index: 2;
+        background-color: var(--light-blue);
+        padding: 10px;
     }
 
-    header input {
-        width: 100%;
+    header input[type=text] {
+        background-color: #ffffff;
+    }
+
+    .menu-btn {
+        background-color: #ffffff;
+        border-radius: 50%;
+        padding: 20px;
+    }
+
+    .menu {
+        top: 56px;
+        background-color: var(--light-blue);    
+        z-index: 3;
+        padding: 20px;
     }
 
     .eye-button,
@@ -1193,6 +1222,10 @@ section + .services div .unmargin {
 
     .sidenav-btn {
         display: block;
+    }
+
+    .main {
+        margin-top: 50px;
     }
 
     .content-container {
@@ -1274,10 +1307,6 @@ section + .services div .unmargin {
 @media (max-width: 600px) {
     .all-content-container {
         padding: 30px;
-    }
-
-    .cooperators {
-        padding-left: 24px;
     }
 
     .content-container p {
