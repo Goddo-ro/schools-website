@@ -40,11 +40,11 @@ a {
 /* sidenav */
 
 .sidenav {
-    width: 300px;
+    width: 340px;
     overflow-x: hidden;
     padding: 4px;
     position: fixed;
-    transform: translateX(-200px);
+    transform: translateX(-220px);
     z-index: 1;
     height: 100%;
     padding-bottom: 30px;
@@ -160,7 +160,7 @@ header {
 }
 
 .menu-btn span:nth-of-type(2) {
-	top: calc(50% - 4px);
+	top: calc(50% - 5px);
 }
 
 .menu-btn span:nth-of-type(3) {
@@ -1210,9 +1210,11 @@ section + .services div .unmargin {
 
     .menu {
         top: 56px;
+        height: calc(100% - 50px);
         background-color: var(--light-blue);    
         z-index: 3;
         padding: 20px;
+        overflow: scroll;
     }
 
     .eye-button,
