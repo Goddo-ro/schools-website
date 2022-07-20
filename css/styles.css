@@ -1305,23 +1305,26 @@ section + .services div .unmargin {
     }
 
     .contact-us-container {
-        width: 80%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0;
+        padding: 0;
         margin-bottom: 25px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
 
     .contact-us-container div {
         margin-bottom: 20px;
-    }
+    }   
 
     .social,
     .contacts {
         width: 100%;
+        margin: 0 auto;
     }
 
     .contacts h2 {
