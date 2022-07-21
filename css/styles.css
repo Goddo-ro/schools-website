@@ -137,8 +137,11 @@ header {
 
 .menu-btn {
     display: none;
-    width: 30px;
-	height: 100%;
+    width: 40px;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
 	position: relative;
 	z-index:2;
 	overflow: hidden;
@@ -1296,6 +1299,7 @@ section + .services div .unmargin {
 @media (max-width: 600px) {
     .all-content-container {
         padding: 30px;
+        padding-top: 20px   ;
     }
 
     .content-container p {
@@ -1365,5 +1369,11 @@ section + .services div .unmargin {
 
     .menu.active {
         left: 0;
+    }
+}
+
+@media (min-width: 1300px) and (max-height: 1050px) {
+    .menu {
+        height: 80%;
     }
 }
