@@ -29,8 +29,11 @@ body {
 
 .all-content-container {
     max-width: 1200px;
-    width: 70%;
+    width: 80%;
     padding: 20px 50px;
+    padding-left: 400px;
+    position: relative;
+    overflow: hidden;
 }
 
 a {
@@ -44,10 +47,11 @@ a {
     overflow-x: hidden;
     padding: 4px;
     position: fixed;
-    transform: translateX(-220px);
+    top: 20px;
     z-index: 1;
     height: 100%;
     padding-bottom: 30px;
+    transform: translateX(-390px);
 }
 
 .sidenav-el {
@@ -100,17 +104,11 @@ a {
 
 /* main */
 
-.main, 
-header {
-    margin-left: 150px;
-}
-
 .main {
     display: flex;
     flex-direction: column;
-    width: 100%;
     transform: translateX(0);
-    transition: transform 0.5s; 
+    transition: transform 0.5s;
 }
 
 section h2 {
@@ -139,8 +137,11 @@ header {
 
 .menu-btn {
     display: none;
-    width: 30px;
-	height: 100%;
+    width: 40px;
+    height: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
 	position: relative;
 	z-index:2;
 	overflow: hidden;
@@ -520,10 +521,7 @@ footer {
 /* cooperation */
 
 .cooperation {
-    width: 100vw;
-    height: 150px;
-    margin: 50px auto;
-    padding-left: 22%;
+    height: 100px;
     background: #fff;
 }
 
@@ -531,9 +529,7 @@ footer {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
-    height: 100%;   
-    padding-right: 20px;
+    height: 100%; 
 }
 
 ul li {
@@ -553,7 +549,7 @@ ul li {
 }
 
 ul li img {
-    width: 100px;
+    width: 60px;
 }
 
 .active-cooperator {
@@ -568,12 +564,12 @@ ul li img {
 
 .contact-us-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 25px;
     margin-left: 40px;
     margin-right: 40px;
-    padding-left: 400px;
+    padding-left: 40px;
     padding-right: 40px;
 }
 
@@ -590,17 +586,18 @@ ul li img {
 }
 
 .social img {
-    width: 45px;
+    width: 35px;
 }
 
 .contacts {
     grid-area: contacts;
-    width: 28%;
+    /* width: 28%; */
 }
 
 .contacts h2 {
     color: var(--blue);
     margin-bottom: 6px;
+    margin-top: 0;
 }
 
 .contacts p {
@@ -1005,8 +1002,8 @@ section + .services div .unmargin {
         width: 100%;
     }
 
-    .main {
-        margin-left: 0px;
+    .all-content-container {
+        padding-left: 40px;
     }
 
     header {
@@ -1033,6 +1030,40 @@ section + .services div .unmargin {
 
     .contact-us-container {
         justify-content: space-around;
+    }
+
+    header {
+        /* grid-template-columns: .1fr 1fr;
+        gap: 0; */
+        position: fixed;
+        top: -40px;
+        left: 0;
+        z-index: 2;
+        background-color: var(--light-blue);
+        padding: 10px;
+    }
+
+    header input[type=text] {
+        background-color: #ffffff;
+    }
+
+    .menu-btn {
+        background-color: #ffffff;
+        border-radius: 50%;
+        padding: 20px;
+    }
+
+    .menu {
+        top: 56px;
+        height: calc(100% - 50px);
+        background-color: var(--light-blue);    
+        z-index: 3;
+        padding: 20px;
+        overflow: scroll;
+    }
+
+    .main {
+        margin-top: 70px;
     }
 }
 
@@ -1076,18 +1107,6 @@ section + .services div .unmargin {
     .enroll-child img {
         width: 60px;
         height: 60px;
-    }
-
-    .cooperation ul {
-        height: 150px;
-    }
-
-    .cooperation > ul {
-        width: 100%;
-    }
-
-    ul li img {
-        width: 80px;
     }
 }
 
@@ -1190,32 +1209,6 @@ section + .services div .unmargin {
     header {
         grid-template-columns: .1fr 1fr;
         gap: 0;
-        position: fixed;
-        top: -40px;
-        left: 0;
-        z-index: 2;
-        background-color: var(--light-blue);
-        padding: 10px;
-    }
-
-    header input[type=text] {
-        background-color: #ffffff;
-    }
-
-    .menu-btn {
-        background-color: #ffffff;
-        border-radius: 50%;
-        padding: 20px;
-        margin-right: 10px;
-    }
-
-    .menu {
-        top: 56px;
-        height: calc(100% - 50px);
-        background-color: var(--light-blue);    
-        z-index: 3;
-        padding: 20px;
-        overflow: scroll;
     }
 
     .eye-button,
@@ -1225,10 +1218,6 @@ section + .services div .unmargin {
 
     .sidenav-btn {
         display: block;
-    }
-
-    .main {
-        margin-top: 50px;
     }
 
     .content-container {
@@ -1310,6 +1299,7 @@ section + .services div .unmargin {
 @media (max-width: 600px) {
     .all-content-container {
         padding: 30px;
+        padding-top: 20px   ;
     }
 
     .content-container p {
@@ -1369,5 +1359,15 @@ section + .services div .unmargin {
 
     section + .services div {
         margin-left: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu {
+        width: 100vw;
+    }
+
+    .menu.active {
+        left: 0;
     }
 }

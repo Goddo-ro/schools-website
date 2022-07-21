@@ -7,17 +7,9 @@ menuBtn.addEventListener('click', function() {
 	menu.classList.toggle('active');
     main.classList.toggle('active');
     if (main.classList.contains('active')) {
-        main.style.transform = 'translateX(360px)';
-        if (window.innerWidth > 735) {
-            header.style.transform = 'translateX(360px)';
-        }
-        document.querySelector('.all-content-container').style.overflow = 'hidden';;
+        document.querySelector('body').style.overflow = 'hidden';;
     } else {
-        main.style.transform = 'translateX(0)';
-        if (window.innerWidth > 735) {
-            header.style.transform = 'translateX(0)';
-        }
-        document.querySelector('.all-content-container').style.overflow = 'scroll';
+        document.querySelector('body').style.overflow = 'scroll';
     }
 })
 
@@ -29,5 +21,5 @@ window.addEventListener('resize', function(event) {
     main.classList.remove('active');
     main.style.transform = 'translateX(0)';
     header.style.transform = 'translateX(0)';
-    document.querySelector('.all-content-container').style.overflow = 'scroll';
+    document.querySelector('body').style.overflow = 'scroll';
 }, true);
