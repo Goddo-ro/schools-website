@@ -7,9 +7,9 @@ menuBtn.addEventListener('click', function() {
 	menu.classList.toggle('active');
     main.classList.toggle('active');
     if (main.classList.contains('active')) {
-        document.querySelector('body').style.overflow = 'hidden';;
+        document.querySelector('body').style.overflowY = 'hidden';;
     } else {
-        document.querySelector('body').style.overflow = 'scroll';
+        document.querySelector('body').style.overflowY = 'scroll';
     }
 })
 
@@ -21,5 +21,5 @@ window.addEventListener('resize', function(event) {
     main.classList.remove('active');
     main.style.transform = 'translateX(0)';
     header.style.transform = 'translateX(0)';
-    document.querySelector('body').style.overflow = 'scroll';
+    document.querySelector('body').style.overflowY = 'scroll';
 }, true);

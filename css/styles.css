@@ -24,7 +24,6 @@ body {
     justify-content: center;
     align-items: center;
     padding-bottom: 0;
-    overflow-x: hidden;
 }
 
 .all-content-container {
@@ -33,7 +32,6 @@ body {
     padding: 20px 50px;
     padding-left: 400px;
     position: relative;
-    overflow: hidden;
 }
 
 a {
@@ -1369,11 +1367,5 @@ section + .services div .unmargin {
 
     .menu.active {
         left: 0;
-    }
-}
-
-@media (min-width: 1300px) and (max-height: 1050px) {
-    .menu {
-        height: 80%;
     }
 }
