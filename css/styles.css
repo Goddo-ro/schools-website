@@ -1008,31 +1008,7 @@ section + .services div .unmargin {
         margin-left: 0;
         grid-template-columns: .1fr 1.2fr .6fr .2fr;
         grid-template-areas:
-            "button left center right"
-    }
-
-    .menu {
-        transform: translateX(-200%);
-        transition: transform 0.5s; 
-        z-index: 2;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-
-    .cooperation,
-    .contact-us-container {
-        padding-left: 0;
-    }
-
-    .contact-us-container {
-        justify-content: space-around;
-    }
-
-    header {
-        /* grid-template-columns: .1fr 1fr;
-        gap: 0; */
+            "button left center right";
         position: fixed;
         top: -40px;
         left: 0;
@@ -1045,13 +1021,9 @@ section + .services div .unmargin {
         background-color: #ffffff;
     }
 
-    .menu-btn {
-        background-color: #ffffff;
-        border-radius: 50%;
-        padding: 20px;
-    }
-
     .menu {
+        transform: translateX(-200%);
+        transition: transform 0.5s; 
         top: 56px;
         height: calc(100% - 50px);
         background-color: var(--light-blue);    
@@ -1060,8 +1032,24 @@ section + .services div .unmargin {
         overflow: scroll;
     }
 
+    .menu-btn {
+        display: block;
+        background-color: #ffffff;
+        border-radius: 50%;
+        padding: 20px;
+    }
+
     .main {
         margin-top: 70px;
+    }
+
+    .cooperation,
+    .contact-us-container {
+        padding-left: 0;
+    }
+
+    .contact-us-container {
+        justify-content: space-around;
     }
 }
 
@@ -1080,6 +1068,20 @@ section + .services div .unmargin {
 }
 
 @media (max-width: 950px) {
+    header {
+        grid-template-columns: .1fr 1fr;
+        gap: 0;
+    }
+
+    .eye-button,
+    .enter-btn {
+        display: none;
+    }
+
+    .sidenav-btn {
+        display: block;
+    }
+
     .footer-contact-us {
         justify-content: space-around;
     }
@@ -1204,20 +1206,6 @@ section + .services div .unmargin {
 }
 
 @media (max-width: 735px) {
-    header {
-        grid-template-columns: .1fr 1fr;
-        gap: 0;
-    }
-
-    .eye-button,
-    .enter-btn {
-        display: none;
-    }
-
-    .sidenav-btn {
-        display: block;
-    }
-
     .content-container {
         background-color: #ffffff;
     }
@@ -1360,9 +1348,9 @@ section + .services div .unmargin {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     .menu {
-        width: 100vw;
+        width: 100%;
     }
 
     .menu.active {
