@@ -1119,6 +1119,7 @@ section + .services div .unmargin {
 
     .news {
         flex-direction: column;
+        width: 80%;
     }
     
     .slideshow-container {
@@ -1255,6 +1256,10 @@ section + .services div .unmargin {
 }
 
 @media (max-width: 700px) {
+    .news {
+        width: 100%;
+    }
+
     .swiper {
         width: 340px;
         height: 200px;
