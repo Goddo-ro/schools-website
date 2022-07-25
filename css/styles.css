@@ -1102,6 +1102,7 @@ section + .services div .unmargin {
 
     .food-info a {
         font-size: .75em;
+        margin-left: 10px;
     }
 
     .enroll-child img {
