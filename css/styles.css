@@ -27,10 +27,11 @@ body {
 }
 
 .all-content-container {
-    max-width: 1600px;
-    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1900px;
+    width: 90%;
     padding: 20px 50px;
-    padding-left: 400px;
     position: relative;
 }
 
@@ -41,15 +42,15 @@ a {
 /* sidenav */
 
 .sidenav {
-    width: 340px;
-    overflow-x: hidden;
+    width: 360px;
     padding: 4px;
-    position: fixed;
     top: 20px;
     bottom: 0;
     z-index: 1;
-    padding-bottom: 30px;
-    transform: translateX(-390px);
+    margin-right: 50px;
+    height: 100%;
+    position: -webkit-sticky;
+    position: sticky;
 }
 
 .sidenav-el {
@@ -98,6 +99,10 @@ a {
 
 .active-link p {
     color: var(--blue);
+}
+
+.content-wrapper {
+    width: 70%;
 }
 
 /* main */
@@ -995,8 +1000,17 @@ section + .services div .unmargin {
 }
 
 @media (max-width: 1300px) {
+    .content-wrapper {
+        width: 100%;
+    }
+
+    .sidenav {
+        position: fixed;
+    }
+
     .all-content-container {
         width: 100%;
+        flex-direction: column;
     }
 
     .all-content-container {
