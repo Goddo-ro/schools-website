@@ -250,18 +250,17 @@ header input[type=text]::placeholder {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
-    width: 100%;
+    width: 70%;
 }
 
 .slideshow-container {
-    width: 72%;
+    width: 76%;
     position: relative;
     margin: auto;
     margin-right: 20px;
 }
 
 .mySlides {
-    width: 100%;
     display: none;  
 }
   
