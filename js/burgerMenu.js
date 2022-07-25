@@ -3,7 +3,6 @@ let menu = document.querySelector('.menu');
 let main = document.querySelector('.main');
 let header = document.querySelector('header');
 menuBtn.addEventListener('click', function() {
-    console.log('hi')
 	menuBtn.classList.toggle('active');
 	menu.classList.toggle('active');
     main.classList.toggle('active');
