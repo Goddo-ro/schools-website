@@ -61,6 +61,7 @@ body::-webkit-scrollbar {
 
 .sidenav {
     max-width: 360px;
+    width: fit-content;
     padding: 4px;
     top: 20px;
     bottom: 0;
