@@ -867,33 +867,39 @@ ul li img {
 
 /* Contact us */
 
-section + .contact-us {
+.form-container {
     width: 70%;
     margin: 40px auto;
 }
 
-section + .contact-us label {
+.form-container label {
     font-weight: bold;
     margin-left: 4px;
 }
 
-section + .contact-us input {
+.form-container input {
     margin-bottom: 16px;
     height: 30px;
 }
 
-section + .contact-us h2 {
+.form-container i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.form-container h2 {
     text-align: center;
     margin-bottom: 12px;
 }
 
-section + .contact-us input,
-section + .contact-us textarea {
+.form-container input,
+.form-container textarea {
     padding: 6px;
     margin-top: 4px;
     width: 100%;
     border-radius: 8px;
     border: 1px solid var(--button-border);
+    font-size: 1rem;
 }
 
 #agree {
@@ -902,13 +908,13 @@ section + .contact-us textarea {
     margin: 0;
 }
 
-section + .contact-us div {
+.form-container .agree-container {
     display: flex;
     align-items: center;
     margin: 20px auto;    
 }
 
-section + .contact-us .submit-btn {
+.form-container .submit-btn {
     border: none;
     background-color: var(--light-blue);
     color: var(--dark-blue);
@@ -916,6 +922,35 @@ section + .contact-us .submit-btn {
     height: auto;
     padding: 8px;
     cursor: pointer;
+}
+
+/* Login */
+
+#password {
+    margin-bottom: 8px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: top;
+}
+
+.form-buttons .submit-btn {
+    max-width: 50%;
+    width: fit-content;
+    padding: 8px 48px;
+    border: 1px solid var(--light-blue);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.form-buttons .submit-btn:hover {
+    border: 1px solid var(--button-border);
+}
+
+.form-buttons a {
+    color: var(--blue);
 }
 
 /* Services */

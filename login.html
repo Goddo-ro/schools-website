@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bvi.min.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <title>Обратная связь</title>
 </head>
 <body>
@@ -25,26 +26,18 @@
                 </section>
 
                 <section class="form-container">
-                    <h2>Обратная связь</h2>
+                    <h2>Вход</h2>
                     <form action="#" method="post">
-                        <label for="name">ФИО</label><br>
-                        <input type="text" id="name" name="name"><br>
-                        <label for="mail">Адрес электройнной почты</label><br>
-                        <input type="text" name="mail"><br>
-                        <label for="title">Тема вопроса</label><br>
-                        <input type="text" name="title"><br>
-                        <label for="text">Ваш вопрос</label><br>
-                        <textarea rows="12" cols="45" name="text"></textarea>
-                        <div class="agree-container">
-                            <input type="checkbox" id="agree" name="agree">
-                            <label class="checkbox-label" for="agree">Я принимаю соглашение сайта на обработку персональных данных </label>
+                        <label for="login">Логин</label><br>
+                        <input type="text" id="login" name="login"><br>
+                        <label for="password">Пароль</label><br>
+                        <input type="password" id="password" name="password">
+                        <i class="bi bi-eye-slash" id="togglePassword"></i>
+                        <div class="form-buttons">
+                            <input class="submit-btn" type="submit" value="Войти">
+                            <a href="#">Восстановить пароль</a>
                         </div>
-                        <input class="submit-btn" type="submit" value="Отправить">
                     </form>     
-                    <div style="position:relative;overflow:hidden;">
-                        <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a>
-                        <a href="https://yandex.ru/maps/geo/lipetsk/53056949/?ll=39.436221%2C52.515860&utm_medium=mapframe&utm_source=maps&z=10.06" style="color:#eee;font-size:12px;position:absolute;top:14px;">Липецк — Яндекс Карты</a>
-                        <iframe src="https://yandex.ru/map-widget/v1/-/CCUNbZvEsA" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
                 </section>
 
                 <section class="add-services">
@@ -69,5 +62,6 @@
     <script src="js/js.cookie.js"></script>
 
     <script src="js/includeContent.js" type="text/javascript"></script>
+    <script src="js/togglePassword.js" type="text/javascript"></script>
 </body>
 </html>
