@@ -1,20 +1,3 @@
-.all-content-container {
-    flex-direction: row;
-}
-
-.content-wrapper {
-    width: 90%;
-}
-
-main {
-    margin: 0;
-    padding: 0;
-}
-
-.menu-btn {
-    display: none;
-}
-
 /* Event */
 
 .event-info {
